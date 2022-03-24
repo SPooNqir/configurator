@@ -11,10 +11,10 @@ GO_LIB_PATH=$(go env GOPATH)/src
 GOPATH=$(go env GOPATH)
 
 GROUPS_VERSION="master"
-curl -o proto/groups.proto "https://raw.githubusercontent.com/slavayssiere-spoon/groups/$GROUPS_VERSION/proto/groups.proto"
+curl -o proto/groups.proto "https://raw.githubusercontent.com/SPooNqir/groups/$GROUPS_VERSION/proto/groups.proto"
 
 ROBOTS_VERSION="master"
-curl -o proto/robots.proto "https://raw.githubusercontent.com/slavayssiere-spoon/robots/$ROBOTS_VERSION/proto/robots.proto"
+curl -o proto/robots.proto "https://raw.githubusercontent.com/SPooNqir/robots/$ROBOTS_VERSION/proto/robots.proto"
 
 echo "gen protoc golang"
 protoc \

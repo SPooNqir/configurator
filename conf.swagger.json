@@ -4,6 +4,11 @@
     "title": "conf.proto",
     "version": "version not set"
   },
+  "tags": [
+    {
+      "name": "configurator"
+    }
+  ],
   "consumes": [
     "application/json"
   ],
@@ -52,30 +57,24 @@
           }
         },
         "alertConnect": {
-          "type": "boolean",
-          "format": "boolean"
+          "type": "boolean"
         },
         "alertDisconnect": {
-          "type": "boolean",
-          "format": "boolean"
+          "type": "boolean"
         },
         "onlyWorkingday": {
-          "type": "boolean",
-          "format": "boolean"
+          "type": "boolean"
         }
       }
     },
     "protobufAny": {
       "type": "object",
       "properties": {
-        "typeUrl": {
+        "@type": {
           "type": "string"
-        },
-        "value": {
-          "type": "string",
-          "format": "byte"
         }
-      }
+      },
+      "additionalProperties": {}
     },
     "rpcStatus": {
       "type": "object",
